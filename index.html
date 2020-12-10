@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Log In</title>
+    <script src="index.js" ></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="title">
+                <h1 style="font-weight: 400;"><strong>Jember Berkebun</h1>
+            </div>
+            <div class="navigation">
+                <a class="button button-white" href="index.html">Beranda</a>
+                <a href="metode tanam.html">Metode</a>
+                <a href="jenis.html">Jenis</a>
+                <a href="manfaat.html">Manfaat</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <div class="daftar">
+        <form name="biodata" method="POST" action="log in.html">
+            <pre>
+            <div class="form">
+                <h1>Daftar Event</h1>
+                Username         <input id="username" placeholder="Enter Username" type="text" name="username">
+                Password          <input id="password" placeholder="Enter Password" type="password" name="password">
+                <div class="merah">Invalid Username or Password.</div>
+                <center>
+                    <button class="button" data-toggle="modal" type="button" onclick="validate()">Log In</button>
+                </center>
+            </pre>
+            </div>
+        </form>
+    </div>
+    
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <center>
+                        <h2>Log In Success!</h2>
+                    </center>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="error_para" ></p>
+
+    <!-- <script>
+        var user = "pweb_C";
+        var pass = "123123";
+        var error="";
+
+        function validate() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username == user && password == pass){
+                // console.log(username + password + "is logged in!!")
+
+                let button = document.querySelector('button[data-toggle = "modal"]');
+                let modal = document.querySelector('.modal');
+
+                modal.classList.add('show');
+
+                modal.addEventListener('click', function(){
+                    this.classList.remove('show');
+                }
+                );
+
+                modal.querySelector('.modal-content').addEventListener ('click', function() {
+                    e.stopPropragation();
+                }
+                );
+      
+            }
+
+            else {
+                // console.log("incorrect username or password");
+	            error = " Invalid Username or Password. ";
+	            document.getElementById( "error_para" ).innerHTML = error;
+	            return false;
+            }
+        }
+
+        
+    </script> -->
+    <div class="copyright">
+        (c) copyright 2020 by Jember Berkebun
+    </div>
+</body>
+</html>

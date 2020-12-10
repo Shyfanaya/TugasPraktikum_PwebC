@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* compnents */
+.button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 70px;
+}
+.button-white {
+    color: black;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+}
+
+/* end of components */
+
+
+/* navbar */
+nav.navbar {
+    background-color: greenyellow;
+    width: 1400px;
+}
+nav.navbar > div.container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar .title {
+    display: flex;
+}
+
+nav.navbar .navigation a:not(:last-child) {
+    margin-right: 25px;
+    color: black;
+    
+}
+nav.navbar .navigation a:not(.button):hover {
+    border-bottom: 1px solid black;
+}
+/* end of navbar */
+.daftar{
+    background-color: #fdff70;
+    height: 545px;
+    width: 1500px;
+}
+.form{
+    background-color: #44d42c;
+    width:600px;
+    height: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid #000000;
+    margin-top: 60px;
+    margin-left: 380px;
+    font-size: 20px;
+}
+.merah{
+    color: rgb(240, 40, 73);
+    display: none;
+}
+
+.merah.show1{
+    display: block;
+}
+
+.copyright{
+    background-color: greenyellow;
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+.button{
+    background-color: white;
+    font-size: 25px;
+    margin-right: 100px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.911);
+}
+.modal.show{
+    display: block;
+}
+.modal-dialog{
+    position: relative;
+    width: auto;
+    max-width: 576px;
+    margin: 50px auto;
+}
+.modal-content{
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+}
+.modal-content.modal-header{
+    padding-top: 30px;
+}
